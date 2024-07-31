@@ -1,0 +1,42 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata: 
+  name: "vnet-bobitjkk9-prod-us-east-001"
+  annotations:
+    github.com/project-slug: ibrt2016/terraform-azure-analytics-bobitjkk9 # Change the value to your github repo which contains terraform code.
+    backstage.io/techdocs-ref: dir:.
+  links:
+  - url: https://github.com/ibrt2016/terraform-azure-analytics-bobitjkk9/blob/98998-prod-createvnet/98998-vnet.tf
+    title: 'Virtual Network Terraform Instance'
+    icon: github
+  tags:
+    - azure
+    - vnet
+    - terraform
+    - high-criticality
+    - ticket-number-98998
+    - entity-ca
+    - owner-bob-tayara
+    - stack-bobitjkk9
+    - env-prod
+    - created-on-2024-07-30
+  description: |
+   **Azure Virtual Network** in stack **bobitjkk9** and in **prod** environment\
+   \
+   **Ticket number:**  98998\
+   **Created on:**  2024-07-30\
+   **Details:**  Create an **Azure Virtual network** in stack **bobitjkk9**, in **prod** environment, in **us-east** region with suffix **001**\
+   **Action:**  Create a new Virtual Network **vnet-bobitjkk9-prod-us-east-001**\
+   **Azure region:**  us-east\
+   **Virtual network address space:**  10.30.0.0/16\
+   **Virtual network suffix:**  001\
+   **Stack name:**  bobitjkk9\
+   **Stack owner:**  bob-tayara\
+   **Azure subscription:**  analytics\
+   **Criticality:**  High\
+   **Entity:**  CA\
+   **Cost center:**  00055
+spec:
+  type: azure-virtual-network
+  owner: central-it
+  system: bobitjkk9-terraform-azure-infra
